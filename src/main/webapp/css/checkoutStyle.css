@@ -1,0 +1,136 @@
+body {
+    font-family: 'Roboto', sans-serif!important;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+h1{
+    text-transform: uppercase;
+    text-decoration:underline;
+    color: #df7206;
+}
+.mainscreen
+{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 177, 61, 0.096);
+    color:#c96b0d;
+}
+
+.card {
+	width: 70rem;
+    margin: auto;
+    background: white;
+    position:center;
+    align-self: center;
+    top: 50rem;
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.leftside {
+	background: rgba(224, 141, 58, 0.897);
+	width: 100%;
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.product {
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.rightside {
+    background-color: #ffffff;
+	width: 100%;
+	border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: 1rem 2rem 3rem 3rem;
+}
+
+p{
+    display:block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: .8rem 0;
+    color: #3c3a39;
+}
+
+.inputbox
+{
+	width: 100%;
+	border: none;
+	font-family: 'Roboto', sans-serif;
+    color: #615a5a;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+    border-bottom: solid 1px #dadadb;
+}
+
+.expcvv {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.6rem;
+}
+
+.expcvv_text{
+    padding-right: 1rem;
+}
+.expcvv_text2{
+    padding:0 1rem;
+}
+
+.button{
+      transition: all 0.3s ease;
+    background: linear-gradient(
+135deg
+, #e47911 0%, #cc9f22 100%);
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    width:100%;
+    letter-spacing: .11rem;
+    outline:none;
+    cursor: pointer;
+}
+
+.button:hover
+{
+	transform: scale(1.05) translateY(-3px);
+     transition: all 0.3s ease;
+    box-shadow: 3px 3px 6px #38373785;
+}
+
+@media only screen and (max-width: 1000px) {
+    .card{
+        flex-direction: column;
+        width: auto;
+      
+    }
+
+    .leftside{
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+      border-top-right-radius:0;
+      border-radius:0;
+    }
+
+    .rightside{
+        width:auto;
+        border-bottom-left-radius: 1.5rem;
+        padding:0.5rem 3rem 3rem 2rem;
+      border-radius:0;
+    }
+}
